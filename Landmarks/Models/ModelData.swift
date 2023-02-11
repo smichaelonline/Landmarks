@@ -7,11 +7,8 @@
 
 import Foundation
 
-//creates an array of landmarks that are initialized from the json file 
-
 var landmarks: [Landmark] = load("landmarkData.json")
 
-// load method fetches JSON data from the app's main bundle
 func load<T: Decodable>(_ filename: String) -> T {
   let data: Data
   
@@ -30,6 +27,6 @@ func load<T: Decodable>(_ filename: String) -> T {
     let decoder = JSONDecoder()
     return try decoder.decode(T.self, from: data)
   } catch {
-    fatalError("Couldn't parse \(filename) as \(T.self): \n\(error)")
+    fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
   }
 }
