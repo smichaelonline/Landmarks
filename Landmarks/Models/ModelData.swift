@@ -7,8 +7,11 @@
 
 import Foundation
 
+//creates an array of landmarks that are initialized from the json file
 var landmarks: [Landmark] = load("landmarkData.json")
 
+
+// load method fetches JSON data from the app's main bundle
 func load<T: Decodable>(_ filename: String) -> T {
   let data: Data
   

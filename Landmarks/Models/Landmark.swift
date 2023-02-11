@@ -9,13 +9,14 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var park: String
     var state: String
     var description: String
 
+  // image property that reads the name of the image and then loads the corersponding image from asset catalog
     private var imageName: String
     var image: Image {
         Image(imageName)
