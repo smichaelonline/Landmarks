@@ -16,6 +16,7 @@ struct Landmark: Hashable, Codable {
   var state: String
   var description: String
   
+  // image property that reads the name of the image and then loads the corersponding image from asset catalog 
   private var imageName: String
   var image: Image {
     Image(imageName)
