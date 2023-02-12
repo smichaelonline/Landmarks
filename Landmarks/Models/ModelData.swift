@@ -11,6 +11,7 @@ import Combine
 final class ModelData: ObservableObject{
   //creates an array of landmarks that are initialized from the json file
   @Published var landmarks: [Landmark] = load("landmarkData.json")
+  var hikes: [Hike] = load("hikeData.json")
 }
 
 // load method fetches JSON data from the app's main bundle
