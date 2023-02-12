@@ -19,6 +19,7 @@
 		9BFA5AC62997680D00A3ECD0 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA5AC52997680D00A3ECD0 /* LandmarkRow.swift */; };
 		9BFA5AC829976B1300A3ECD0 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA5AC729976B1300A3ECD0 /* LandmarkList.swift */; };
 		9BFA5ACA29976BE500A3ECD0 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA5AC929976BE500A3ECD0 /* LandmarkDetail.swift */; };
+		9BFA5B032998939600A3ECD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFA5B012998937900A3ECD0 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		9BFA5AC52997680D00A3ECD0 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		9BFA5AC729976B1300A3ECD0 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		9BFA5AC929976BE500A3ECD0 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		9BFA5B012998937900A3ECD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFA5B032998939600A3ECD0 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +56,7 @@
 			children = (
 				9B744FF6299758E500426F6E /* Landmarks */,
 				9B744FF5299758E500426F6E /* Products */,
+				9BFA5B002998937800A3ECD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +117,14 @@
 				9B74500A2997616300426F6E /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9BFA5B002998937800A3ECD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BFA5B012998937900A3ECD0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
