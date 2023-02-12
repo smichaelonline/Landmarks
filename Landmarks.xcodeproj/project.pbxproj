@@ -97,12 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				9B744FF9299758E500426F6E /* ContentView.swift */,
+				9BFA5B0A29989D5800A3ECD0 /* HexagonParameters.swift */,
 				9BFA5B0929989B8F00A3ECD0 /* Helpers */,
 				9BFA5B0829989B8800A3ECD0 /* Landmarks */,
 				9BFA5AC52997680D00A3ECD0 /* LandmarkRow.swift */,
 				9BFA5AC729976B1300A3ECD0 /* LandmarkList.swift */,
 				9BFA5AC929976BE500A3ECD0 /* LandmarkDetail.swift */,
-				9BFA5B0A29989D5800A3ECD0 /* HexagonParameters.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
