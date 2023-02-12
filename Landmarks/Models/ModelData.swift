@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Combine
 
-//creates an array of landmarks that are initialized from the json file
-var landmarks: [Landmark] = load("landmarkData.json")
-
+final class ModelData: ObservableObject{
+  //creates an array of landmarks that are initialized from the json file
+  @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 // load method fetches JSON data from the app's main bundle
 func load<T: Decodable>(_ filename: String) -> T {
