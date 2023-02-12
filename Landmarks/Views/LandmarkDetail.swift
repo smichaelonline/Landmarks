@@ -12,7 +12,7 @@ struct LandmarkDetail: View {
   var landmark: Landmark
   
   var body: some View {
-    VStack {
+    ScrollView {
       
       MapView(coordinate: landmark.locationCoordinate)
         .ignoresSafeArea(edges: .top)
@@ -23,26 +23,27 @@ struct LandmarkDetail: View {
         .padding(.bottom, -130)
       
       VStack(alignment: .leading) {
-        Text("Turtle Rock")
+        Text(landmark.name)
           .font(.title)
         
         HStack {
-          Text("Joshua Tree National Park")
+          Text(landmark.park)
           Spacer()
-          Text("California")
+          Text(landmark.state)
         }
         .font(.subheadline)
         .foregroundColor(.secondary)
         
         Divider()
         
-        Text("About Turtle Rock")
+        Text("About \(landmark.name)")
           .font(.title2)
-        Text("Description")
+        Text(landmark.description)
       }
       .padding()
-      Spacer()
     }
+    .navigationTitle(landmark.name)
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
